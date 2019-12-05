@@ -1,0 +1,402 @@
+<!DOCTYPE html> <!-- 21861089_이수연 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <style>
+  a {
+    color: #000000
+  }
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: '돋움';
+      font-size: 14px;
+      color: #000000;
+    }
+
+    li {
+      list-style-type: none;
+    }
+p {
+  font-size: 13px;
+  color: #000000;
+}
+h8 {
+  font-size: 13px;
+  color: #ffffff;
+}
+#logo {
+  float: center;
+  margin: 7px 0 0 465px;
+  border: solid 1px white;
+}
+#menus {
+  float: center;
+  color: black;
+  /* border: solid 1px red; */
+}
+#top_menu {
+  text-align: right;
+  margin-top: 16px;
+  /* border: solid 1px red; */
+}
+#top_menu2 {
+  text-align: left;
+  margin-top: -36px;
+  /* border: solid 1px red; */
+}
+#main_menu {
+  float: center;
+  margin-top: 20px;
+  font-family: '맑은고딕';
+  font-size: 18px;
+  color: black;
+  /* border: solid 1px grey; */
+}
+#main_menu li {
+  float: center;
+  display: inline;
+   margin-left: 80px;
+}
+    .clear {
+      clear: both;
+    }
+
+    header {
+      width: 1140px;
+      height: 100px;
+      margin: 0 auto;
+      /* border: solid 1px red; */
+    }
+    header2 {
+      width: 1140px;
+      height: 100px;
+      margin: 0 auto;
+      /* border: solid 1px red; */
+    }
+    #main_img {
+      width: 100%;
+      height: 500px;
+      background-image: url('./main.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      margin-top: 70px;
+      /* border: solid 1px red; */
+    }
+    #main_img2 {
+      width: 100%;
+      height: 500px;
+      background-image: url('./mu.jpeg');
+      background-repeat: no-repeat;
+      background-position: top center;
+      margin-top: 67px;
+      /* border: solid 1px red; */
+    }
+    #contents {
+      width: 1140px;
+      margin: 0 auto;
+    }
+
+    #main_contents {
+      width: 1140PX
+      float: center;
+      margin-top: 25px; }
+
+    #main_contents h3 {
+       font-color: #877968;
+       font-size: 22px;
+       padding-bottom: 8px;
+       border-bottom: solid 1px #cccccc;
+    }
+
+    #main_contents p {
+       margin-top: 20px;
+       line-height: 180%;
+    }
+
+    #main_contents #figure {
+       margin-top: 20px;
+       text-align: left;
+    }
+
+    #main_contents li {
+       padding: 5px;
+    }
+
+    footer {
+      width: 100%;
+      float: 150px;
+      margin-top: 30px;
+      background-color: #000000;
+    }
+    #footer_box{
+      width: 1140px;
+      height: 150px;
+      margin: 0 auto;
+    }
+    #address{
+      float: CENTER;
+      margin: 50px 30px 0 0;
+      color: white;
+
+    /*  border: solid 1px red; */
+    }
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:active {
+      text-decoration: none;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 1px;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+      padding: 10px 30px;
+      z-index: 4;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .button2 {
+  background-color: #000000;
+  border: none;
+  color: #e0e0e0;
+  padding: 8px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  cursor: pointer;
+  }
+      .button {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    color: #000000;
+    padding: 8px 61px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 10px;
+    cursor: pointer;
+  }
+  .button:hover {background-color: #e7e7e7;}
+  .button3 {
+background-color: #ffffff;
+border: none;
+color: #000000;
+padding: 8px 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;
+margin: 2px 2px;
+cursor: pointer;
+
+}
+.button4 {
+background-color: #0000000;
+border: none;
+color: #ffffff;
+padding: 8px 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;
+margin: 2px 2px;
+cursor: pointer;
+}
+
+.column {
+  float: center;
+  width: 100%;
+  padding: 0px;
+  height: 500px;
+}
+
+.row:after {
+  float: center;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  float: center;
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+.button5 {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button5:hover span {
+  padding-right: 25px;
+}
+
+.button5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button6 {
+  display: inline-block;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button6 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button6 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button6:hover span {
+  padding-right: 25px;
+}
+
+.button6:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  </style>
+  <body>
+<header>
+  <nav id='menus'>
+  <div id='top_menu'>
+<a href="./u1.html" class="button3">로그인</a>ㅣ
+<a href="./u2" class="button3">장바구니</a>ㅣ
+<a href="./u3" class="button3">고객센터</a>
+    </div>
+    <nav id='menus'>
+    <div id='top_menu2'>
+  <a href="https://www.byredo.com/eu_en/" class="button3">바이레도 프랑스</a>
+  </div>
+  <div id='logo'>
+      <a href="./index_21861089.html" target="_blank"><img src='./logo.png' ></a>
+    </div>
+    <br>
+    <nav id='menus'>
+    <center><div class="dropdown">
+      <span>
+        <a href="./index_21861089.html" class="button2">BYREDO</a>
+        </span>
+        <span>
+      <a href="./ab.html" class="button">ABOUT</a>
+          </span>
+          <span>
+      <a href="./sh.html" class="button">SHOP</a>
+          </span>
+          <span>
+      <a href="./ch.html" class="button">취향별</a>
+          </span>
+          <span>
+      <a href="./sn.html" class="button">SNS</a>
+          </span>
+</center>
+</header>
+
+<section id='./mu.jpeg'>
+</section>
+
+<section id='main_img'>
+</section>
+
+<div id='main_contents'><CENTER>
+<h3>BYREDO</h3>
+<center><P><br>
+<b>Byredo</b>는 만능하고 무한한 브랜드의 세계를 표현하면서 창조가 감정에 이끌리는 새로운 접근법을 통해 럭셔리 세계를 재창조하고 있습니다.<br>
+현대적 럭셔리함에 대한 새로운 접근방식을 촉진하기 위해 사용 가능한 최고 품질의 재료와 고급 디자인 세부사항을 사용하고있으며<br>
+향수, 집, 가죽제품, 액세서리 등 다양한 제품을 만들어 개발하며, 전 세계 40여 개국에서 독점 네트워크를 통해 판매하고있습니다<br>
+/<br>
+Byredo is a European luxury brand founded in Stockholm in 2006 by Ben Gorham, with an ambition to translate memories and emotions into products and experiences.<br>
+Byredo is reinventing the world of luxury through a new approach, where creation is led by emotions, expressing a full and limitless brand universe. <br>
+Byredo conceives objects using the highest quality materials available, and high-end design details to fuel a renewed approach to modern luxury. <br>
+Byredo creates and develops a range of products such as fragrance, home, leather goods and accessories, and is sold in more than 40 countries in a very high-end exclusive network worldwide.
+</P></CENTER>
+<div class='clear'></div> <!--float 속성 해제-->
+
+<footer>
+  <div id='footer_box'>
+  <ul id='address'>
+<BR>  <li>Byredo Seoul
+12, Dosan-daero 45-gil
+Gangnam-gu, Seoul</li>
+  <li>TEL:+46(0)852502615 </li>
+  <li>COPYRIGHT (C) Byredo ALL RIGHTS RESERVER</li>
+<ul>
+  </div>
+</footer>
+
+  </body>
+</html>
